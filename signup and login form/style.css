@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('./bg.jpg');
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  background-color: rgba(0, 0, 0, 80%);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 10px 0;
+}
+
+input, select {
+  margin-bottom: 10px;
+  outline: none;
+  font-size: inherit;
+}
+
+.form-control {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+}
+
+img {
+  object-fit: cover;
+  object-position: top;
+  height: 100px;
+  width: 200px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  outline: 1px solid black;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 2px;
+  background-color: hsl(120, 82%, 35%);
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: hsl(120, 81%, 38%);
+}
+
+.btn--reset {
+  margin-top: 10px;
+  border: none;
+  font-size: inherit;
+  background-color: hsl(0, 100%, 50%);
+}
+
+.btn--reset:hover {
+  background-color: hsl(0, 100%, 60%);
+}
+
+.btn--pop {
+  margin-top: 10px;
+  border: none;
+  font-size: inherit;
+  background-color: hsl(60, 95%, 30%);
+}
+
+.btn--pop:hover {
+  background-color: hsl(60, 96%, 35%);
+}

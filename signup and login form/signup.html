@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic HTML web page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="signup.php" method="post" class="form">
+      <label
+        >First name:
+        <input class="form-control" name="firstName" id="firstName"/>
+      </label>
+      <label
+        >Last name:
+        <input class="form-control" name="lastName" id="lastName"/>
+      </label>
+      <label
+        >Email:
+        <input type="email" class="form-control" name="email" id="email"/>
+      </label>
+      <label
+        >Password:
+        <input type="password" class="form-control" name="password" id="password"/>
+      </label>
+      <label
+        >Phone no:
+        <input class="form-control" name="number" id="number" />
+      </label>
+      <label>Gender:
+        <ul>
+          <li><input name="gender" type="radio" value="m" />Male</li>
+          <li><input name="gender" type="radio" value="f" />Female</li>
+        </ul>
+      </label>
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+      <button type="reset" class="btn btn--reset">Reset</button>
+      <img src="./ufo.jpg" />
+      <button class="btn btn--pop" id="open-dialog">Open Dialog</button>
+
+      <dialog id="my-dialog" style="z-index: 2;">
+        <h2>Welcome to KRMU</h2>
+        <button id="close-dialog">Close</button>
+      </dialog>
+    </div>
+    <script>
+      const openButton = document.getElementById("open-dialog");
+      const dialog = document.getElementById("my-dialog");
+      const closeButton = document.getElementById("close-dialog");
+
+      openButton.addEventListener("click", () => {
+        dialog.show();
+      });
+
+      closeButton.addEventListener("click", () => {
+        dialog.close();
+      });
+    </script>
+  </body>
+</html>
